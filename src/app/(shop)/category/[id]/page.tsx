@@ -11,7 +11,7 @@ interface Props {
 export default function ({ params }: Props) {
 
     const { id } = params
-    if (id === 'kids') {
+    if (id === 'not-found') {
         notFound();
     }
 
