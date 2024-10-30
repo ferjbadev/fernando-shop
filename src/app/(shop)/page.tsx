@@ -7,15 +7,15 @@ export default function Home() {
   return (
     <>
 
-    {/* Título */}
-    <Title 
-      title="Shop"
-      subtitle="A virtual store for the best products"
-      className="mb-2"
+      {/* Título */}
+      <Title
+        title="Shop"
+        subtitle="A virtual store for the best products"
+        className="mb-2 hover:underline font-semibold"
       />
 
-    {/* Lista de productos */}
-    <ProductGrid products={products} /> 
+      {/* Lista de productos */}
+      <ProductGrid products={products} />
     </>
   );
 }
