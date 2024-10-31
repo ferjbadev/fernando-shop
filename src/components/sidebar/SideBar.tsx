@@ -43,7 +43,7 @@ const SideBar = () => {
                 {/* Boton de X */}
                 <IoCloseOutline
                     size={30}
-                    className="absolute top-5 right-5 cursor-pointer hover:bg-gray-300 rounded-full"
+                    className="absolute top-5 right-5 cursor-pointer hover:bg-gray-300 rounded-fullZW"
                     onClick={() => closeMenu()} // Funcion para cerrar el menu lateral
                 />
 

@@ -27,7 +27,7 @@ const TopMenu = () => {
                 <Link href='/category/women'>
                     <span className='m-2 p-2 rounded-full transition-all hover:underline font-semibold text-2xl hover:bg-gray-300'>Women</span>
                 </Link>
-                <Link href='/category/kids'>
+                <Link href='/category/kid'>
                     <span className='m-2 p-2 rounded-full transition-all hover:underline font-semibold text-2xl hover:bg-gray-300'>Kids</span>
                 </Link>
             </div>
