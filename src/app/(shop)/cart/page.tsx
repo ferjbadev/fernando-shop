@@ -13,7 +13,8 @@ const productsInCart = [
 export default function ShoppingCart() {
     return (
         <div className="container mx-auto px-4 py-8">
-            <Title title="Shopping Cart" />
+            <Title title="Shopping Cart"
+                className="text-center" />
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 {/* Cart Items */}
                 <div className="lg:col-span-2">
@@ -48,13 +49,13 @@ export default function ShoppingCart() {
                 {/* Order Checkout */}
                 <div className="lg:col-span-1">
                     <div className="bg-white rounded-lg shadow-md p-6">
-                        <h2 className="text-lg font-semibold mb-4">Order Checkout</h2>
+                        <h2 className="flex justify-center items-center text-lg font-semibold mb-4">Order Checkout</h2>
                         <div className="flex justify-between mb-2">
                             <span>Subtotal</span>
                             <span>${productsInCart.reduce((acc, product) => acc + product.price, 0).toFixed(2)}</span>
                         </div>
                         <div className="flex justify-between mb-2">
-                            <span >Shipping</span>
+                            <span>Shipping</span>
                             <span className="text-green-600">$10.00</span>
                         </div>
                         <hr className="my-4" />
@@ -65,7 +66,7 @@ export default function ShoppingCart() {
                             </span>
                         </div>
                         <button className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300 mt-4">
-                            Proceed to Checkout
+                            <Link href="/checkout/address" className="block w-full text-center">Checkout</Link>
                         </button>
                     </div>
                 </div>
