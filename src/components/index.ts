@@ -8,3 +8,4 @@ export * from './sidebar/SideBar';
 export * from './product/SizeSelector';
 export * from './product/SelectQuantity';
 export * from './product/Slider';
+export * from './ui/footer/Footer';
