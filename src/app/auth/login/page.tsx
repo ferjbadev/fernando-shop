@@ -12,7 +12,7 @@ export default function () {
       {/* Tarjeta contenedora de fondo blanco con sombra grande  */}
       <div className="px-10 py-8 mt-4 text-left bg-white shadow-xl rounded-2xl w-full max-w-lg">
         {/* Título de inicio de sesión*/}
-        <h1 className={`${titleFont.className} text-4xl font-bold text-center text-black mb-8`}>
+        <h1 className={`${titleFont.className} text-4xl font-bold text-center text-black`}>
           Login In
         </h1>
         <form>
@@ -77,7 +77,7 @@ export default function () {
 
         <Link href="/auth/newAccount/">
           {/* Enlace para crear una nueva cuenta */}
-          <span className="block text-center px-6 py-2 border border-black text-black bg-gradient-to-r from-green-300 to-green-600 rounded-lg shadow-lg hover:to-green-800 transition duration-300">
+          <span className="block text-center py-2 border border-black text-black bg-gradient-to-r from-green-300 to-green-600 rounded-lg shadow-lg hover:to-green-800 transition duration-300">
             Create a new account
           </span>
         </Link>
