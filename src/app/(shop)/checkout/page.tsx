@@ -52,11 +52,8 @@ export default function ShoppingCart() {
                             <p>Av. Siempre Viva 123</p>
                             <p>Number: 154.545.4545</p>
                         </div>
-
                         {/* Linea divisoria */}
-                        <div className="w-full h-1 border-t border-black mb-10" />
-
-
+                        <div className="w-full h-1 border-t border-black mb-5" />
                         {/* Detalles de orden */}
                         <div className="flex justify-between mb-2">
                             <span>Subtotal</span>
@@ -66,14 +63,21 @@ export default function ShoppingCart() {
                             <span>Shipping</span>
                             <span className="text-green-600">$10.00</span>
                         </div>
-                        <hr className="my-4" />
+                        {/* Segunda Linea divisoria */}
+                        <hr className="w-full h-1 border-t border-black mb-5" />
                         <div className="flex justify-between mb-2">
                             <span className="font-semibold">Total</span>
                             <span className="font-semibold">
                                 ${(productsInCart.reduce((acc, product) => acc + product.price, 0) + 10).toFixed(2)}
                             </span>
                         </div>
-                        <button className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300 mt-4">
+                        {/* Terminos y Condiciones */}
+                        <span className="text-xs text-gray-600 hover:underline">
+                            By clicking on Make Order you are accepting
+                            <span className="text-black"> our terms and conditions of use</span>
+                        </span>
+
+                        <button className="w-full bg-blue-600 text-white py-2 border border-black px-4 rounded-md hover:bg-blue-700 transition duration-300 mt-4">
                             <Link href="/orders/123" className="block w-full text-center">Make Order</Link>
                         </button>
                     </div>
